@@ -1,0 +1,11 @@
+{% extends "base.html.twig" %}
+{% block body %}
+{% set heretime = date('h') %}
+<h1>Hello From Lacanau </h1>
+<p>It's currently {{'now'|date('H:i A')}}</p>
+<footer>
+    <p>&copy; Copyright {{'now'|date('Y')}}
+        &middot; <a href="#">About Us</a>
+    </p>
+</footer>
+{% endblock %}
